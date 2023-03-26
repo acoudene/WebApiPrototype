@@ -1,1 +1,8 @@
-GET https://localhost:7147/WeatherForecast
+# VARIABLES
+@scheme = https
+@hostname = localhost
+@port = 7147
+@host = {{scheme}}://{{hostname}}:{{port}}
+@contentType = application/json
+
+GET {{host}}/WeatherForecast
